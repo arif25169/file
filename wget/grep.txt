@@ -1,0 +1,7 @@
+http://www.picsbees.com/images.*?\.jpg
+
+wget -i r.txt -q -O - | grep -Po 'https://pzy.be/t.*?\.jpg' >> bc.txt
+
+wget -i r.txt -q -O - | grep -Po 'https://pzy.be/t.*?\.jpg' >> bc.txt
+
+wget -i bee.txt -q -O - | grep -Po 'http://www.picsbees.com/images.*?\.jpg' >> ab.txt
