@@ -10,6 +10,7 @@ fi
  return $return_
 
 }
+sudo apt update
 
 # emails=('testabc.com' 'testxyz.org')
 # passwords=('admin123' 'passwd1!')
