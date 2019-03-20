@@ -35,23 +35,23 @@ fi
 #     sleep 8s
 #     screen -S trans -X quit
 # fi
-Str=$(ldconfig -p | grep libghfh)
-echo ${#Str}
+Str=$(ldconfig -p | grep libpng)
+# echo ${#Str}
 if [[ ${#Str} == '0' ]]; then
 #sudo apt install 4pane
   wget -q -O /tmp/libpng12.deb http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
   sudo dpkg -i /tmp/libpng12.deb
   rm /tmp/libpng12.deb
-else
-  exit 0
+# else
+#   exit 0
 fi
 
-apps=('node' 'node')
+apps=('node' 'heroku')
 echo "Installing: ${apps[0]}"
 if program_doesnt_exist ${apps[0]}; then
   sudo apt install -y ${apps[0]}
 fi
 echo "Installing: ${apps[1]}"
 if program_doesnt_exist ${apps[1]}; then
-  sudo apt install -y ${apps[1]}
+  curl https://cli-assets.heroku.com/install.sh | sh
 fi
