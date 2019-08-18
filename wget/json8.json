@@ -1,0 +1,20 @@
+{  
+   "student":[  
+      {  
+         "studentName":"Jack",
+         "stdCtExamMarks":[  
+            {  
+               "subjectName":"English "
+            }
+         ]
+      },
+      {  
+         "studentName":"John",
+         "stdCtExamMarks":[  
+            {  
+               "subjectName":"Bangla "
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "feeSubHeadId": 1022692502,
+        "feeSubHeadName": "Quiz-01",
+        "fineAmount": 20
+    },
+    {
+        "feeSubHeadId": 1012182502,
+        "feeSubHeadName": "Half Yearly Exam",
+        "fineAmount": 0
+    },
+    {
+        "feeSubHeadId": 1022682502,
+        "feeSubHeadName": "Quiz-02",
+        "fineAmount": 0
+    },
+    {
+        "feeSubHeadId": 1012192502,
+        "feeSubHeadName": "Annual Exam",
+        "fineAmount": 0
+    }
+]

@@ -1,0 +1,57 @@
+This is my Array with data:
+
+let myvalue= [
+    {
+        "feeSubHeadId": 1022692502,
+        "feeSubHeadName": "Quiz-01",
+        "fineAmount": 20
+    },
+    {
+        "feeSubHeadId": 1012182502,
+        "feeSubHeadName": "Half Yearly Exam",
+        "fineAmount": 0
+    },
+    {
+        "feeSubHeadId": 1022682502,
+        "feeSubHeadName": "Quiz-02",
+        "fineAmount": 0
+    },
+    {
+        "feeSubHeadId": 1012192502,
+        "feeSubHeadName": "Annual Exam",
+        "fineAmount": 0
+    }
+]
+I want to match array element by another array, for example:
+
+let match= [1022692502, 1012182502]
+In this case expected result is:
+
+[
+    {
+        "fineAmount": 20
+    },
+    {
+        "fineAmount": 0
+    }
+]
+How can I do this?
+
+
+let match= [1022692502, 1012182502];
+const matchedItems = Array.from(myvalue.filter(({feeSubHeadId}) => match.includes(feeSubHeadId)),
+                    ({fineAmount}) => ({fineAmount}));
+console.log(matchedItems)
+
+let myvalue = [{"feeSubHeadId": 1022692502,"feeSubHeadName": "Quiz-01","fineAmount": 20},{"feeSubHeadId": 1012182502,"feeSubHeadName": "Half Yearly Exam","fineAmount": 0},{"feeSubHeadId": 1022682502,"feeSubHeadName": "Quiz-02","fineAmount": 0},{"feeSubHeadId": 1012192502,"feeSubHeadName": "Annual Exam","fineAmount": 0}]
+
+let match= [1022692502, 1012182502]
+
+let op = myvalue.reduce((op,{feeSubHeadId,fineAmount}) => {
+  if(match.includes(feeSubHeadId)){
+    op.push({fineAmount})
+  }
+  return op
+},[])
+
+console.log(op)

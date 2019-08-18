@@ -1,0 +1,19 @@
+var arrayOfObjects = [{"id":28,"Title":"Sweden"}, {"id":56,"Title":"USA"}, {"id":89,"Title":"England"}];
+
+for (var i = 0; i < arrayOfObjects.length; i++) {
+    var object = arrayOfObjects[i];
+    for (var property in object) {
+        alert('item ' + i + ': ' + property + '=' + object[property]);
+    }
+    // If property names are known beforehand, you can also just do e.g.
+    // alert(object.id + ',' + object.Title);
+}
+
+var string = '[{"id":28,"Title":"Sweden"}, {"id":56,"Title":"USA"}, {"id":89,"Title":"England"}]';
+var arrayOfObjects = eval(string);
+
+
+$(jQuery.parseJSON(JSON.stringify(dataArray))).each(function() {  
+    var ID = this.id;
+    var TITLE = this.Title;
+});

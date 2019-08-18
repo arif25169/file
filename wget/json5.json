@@ -1,0 +1,78 @@
+$.each(data[0], function(i, item) {
+         data[0][i].deviceId + data[0][i].typeOfDevice  + data[0][i].state +  data[0][i].assigned 
+    });
+[  
+[  
+    {  
+        "@id":1,
+        "deviceId":1,
+        "typeOfDevice":"1",
+        "state":"1",
+        "assigned":true
+    },
+    {  
+        "@id":2,
+        "deviceId":3,
+        "typeOfDevice":"3",
+        "state":"Excelent",
+        "assigned":true
+    },
+    {  
+        "@id":3,
+        "deviceId":4,
+        "typeOfDevice":"jÃºuna",
+        "state":"Excelent",
+        "assigned":true
+    },
+    {  
+        "@id":4,
+        "deviceId":5,
+        "typeOfDevice":"nffjnff",
+        "state":"Regular",
+        "assigned":true
+    },
+    {  
+        "@id":5,
+        "deviceId":6,
+        "typeOfDevice":"44",
+        "state":"Excelent",
+        "assigned":true
+    },
+    {  
+        "@id":6,
+        "deviceId":7,
+        "typeOfDevice":"rr",
+        "state":"Excelent",
+        "assigned":true
+    },
+    {  
+        "@id":7,
+        "deviceId":8,
+        "typeOfDevice":"j",
+        "state":"Excelent",
+        "assigned":true
+    },
+    {  
+        "@id":8,
+        "deviceId":9,
+        "typeOfDevice":"55",
+        "state":"Excelent",
+        "assigned":true
+    },
+    {  
+        "@id":9,
+        "deviceId":10,
+        "typeOfDevice":"5",
+        "state":"Excelent",
+        "assigned":true
+    },
+    {  
+        "@id":10,
+        "deviceId":11,
+        "typeOfDevice":"5",
+        "state":"Excelent",
+        "assigned":true
+    }
+],
+1
+]
